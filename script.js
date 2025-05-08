@@ -25,7 +25,25 @@ function displayBooks() {
   for (const books of library){
     const bookLists = document.createElement('p');
     const toggleReadStatus = document.createElement('span');
+    const deleteBookCard = document.createElement('span');
+    deleteBookCard.innerText = "Delete";
+    deleteBookCard.className = 'delete-btn';
     toggleReadStatus.textContent = 'change read status ';
+    deleteBookCard.setAttribute("data-id", books.id);
+    
+    function removeBook(id) {
+  const index = library.findIndex(book => book.id === id);
+  if (index !== -1) {
+    library.splice(index, 1); // Remove book from array
+    container.innerHTML = '';
+    displayBooks(); // Refresh UI
+  }
+}
+
+    deleteBookCard.addEventListener("click", () =>{
+      removeBook(books.id);
+    });
+    
     toggleReadStatus.addEventListener("click", () => {
       if (books.readStatus === 'read') {
         books.readStatus = 'not read';
@@ -42,6 +60,7 @@ function displayBooks() {
     ${books.readStatus}<br><br>`;
     container.appendChild(bookLists);
     bookLists.appendChild(toggleReadStatus);
+    bookLists.appendChild(deleteBookCard)
   }
 }
 displayBooks();
