@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+    <link rel ="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="books_container" class="background">
+    </div>
+    <button class="add-book-btn" data-open-modal>Add Book</button>
+    <dialog data-modal>
+      <form>
+  <label for="author">Author:</label><br>
+  <input type="text" id="author" name="author"><br><br>
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title"><br><br>
 
+  <label for="pages">Number of Pages:</label><br>
+  <input type="number" id="pages" name="pages" min="1"><br><br>
+  
+  <label for="read-status">Read this?</label>
+  <input type="checkbox" id="read-status" name="read-status" value="not read"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+    </dialog>
+      <script src="books.js"></script>
+  </body>
+</html>
