@@ -1,1 +1,106 @@
+p {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.add-book-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: 2px solid #4CAF50; /* Green border */
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.add-book-btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-book-btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+  body {
+    font-family: Arial, sans-serif;
+    background: #191919e4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  form {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  span {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+span:hover {
+  background-color: #0056b3;
+}
+label, input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+}
 
