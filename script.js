@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const library = [];
 
 function Book(title, author, pages, readStatus, id){
