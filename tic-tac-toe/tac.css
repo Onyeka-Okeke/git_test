@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1f1d1d;
+    text-align: center;
+    color: azure;
+    user-select: none;
+    caret-color: transparent;
+    outline: none;
+}
+
+.game-container {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background:rgb(74, 77, 104);
+    border: 2px solid #a88b8b;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cell:hover {
+    background: #3a3a3a;
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    min-height: 24px;
+}
+
+#reset {
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+.cell, 
+#message,
+ #reset {
+    user-select: none;
+    caret-color: transparent;
+    outline: none;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+#reset {
+    background: linear-gradient(135deg, #1e515f, #0072ff);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 20px;
+    padding: 16px 40px;
+    border-color: antiquewhite;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#reset:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.4)
+}
+#reset:active {
+    transform: scale(0.95);
+}

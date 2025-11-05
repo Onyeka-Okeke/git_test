@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const library = [];
 
 function Book(title, author, pages, readStatus, id){
@@ -29,7 +28,7 @@ function displayBooks() {
     const deleteBookCard = document.createElement('span');
     deleteBookCard.innerText = "Delete";
     deleteBookCard.className = 'delete-btn';
-    toggleReadStatus.textContent = 'change read status ';
+    toggleReadStatus.innerText = 'change read status ';
     deleteBookCard.setAttribute("data-id", books.id);
     
     function removeBook(id) {
